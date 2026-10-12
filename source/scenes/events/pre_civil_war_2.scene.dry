@@ -23,7 +23,7 @@ on-arrival: war_reactionary_help = 1
 
 The far-right leaders readily agreed to fight against the Bolshevik menace, considering them a common enemy.
 
-@war_work_return
+@work_return
 max-visits: 1
 go-to: kpd_revolution_menu
 on-arrival: war_work_return = 1
