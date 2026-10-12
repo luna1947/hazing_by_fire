@@ -19,7 +19,7 @@ On our side, we have the loyal portions of the Reichsbanner, which has [+ rb_str
 
 @rw_help
 max-visits: 1
-go-to: coup_menu
+go-to: united_revolution_menu
 choose-if: reichswehr_loyalty > 0.2
 on-arrival: war_rw_help = 1
 
@@ -27,14 +27,14 @@ We have urged the Reichswehr to stand down, to avoid killing their countrymen. [
 
 @general_strike
 max-visits: 1
-go-to: coup_menu
+go-to: united_revolution_menu
 on-arrival: war_general_strike = 1
 
 A general strike stopped the Kapp Putsch in 1920, and it can stop <span style="color: #7A3C00;">fascism</span> today. [? if normalized_workers_total > 70 : The workers are largely united with us. ?][? if normalized_workers_total >= 50 and normalized_workers_total <= 70 : There is some dissent within labor, but a majority of workers support the general strike. ?][? if normalized_workers_total > 30 and normalized_workers_total < 50 : However, there is substantial dissent within labor, and less than half support the general strike. ?][? if normalized_workers_total <= 30 : However, labor is deeply divided, and most workers do not heed the call to strike. ?]
   
 @loyal_police
 max-visits: 1
-go-to: coup_menu
+go-to: united_revolution_menu
 choose-if: spd_in_government = 1
 on-arrival: war_loyal_police = 1
 
@@ -42,7 +42,7 @@ Since we still control the Prussian government, we can call upon the Prussian po
 
 @party_discipline
 max-visits: 1
-go-to: coup_menu
+go-to: united_revolution_menu
 on-arrival: war_party_discipline = 1
 
 We have enforced party discipline in an attempt to quell dissent among the reformist wing of the SPD.
