@@ -1,0 +1,42 @@
+title: The KPD launches an uprising!
+subtitle: The Bolsheviks will destroy Germany for this madness...
+audio: music/communist/A_las_barricadas.ogg
+go-to: kpd_revolution_menu
+
+= The Array of Forces
+
+Our enemies are the the radical, revolutionary RFB, with [+ rfb_strength +] thousand troops. The loyalties of the Reichsbanner, with its [+ rb_strength +] members, the Reichswehr, with its [+ reichswehr_strength +] thousand regular soldiers, and Prussian police, with [+ prussian_police_strength +] thousand members, are unclear.
+
+On our side, we have the loyal parts of the Reichsbanner, with [+ rb_strength +] members, and the reactionary SA with [+ sa_strength +] thousand and Stahlhelm with [+ sh_strength +] thousand members.
+  
+@kpd_revolution_menu
+
+- @reactionary_help: Ask the - ugh - reactionary Stahlhelm and SA to help us.
+- @work_return: Demand that strikers return to work!
+- @party_discipline: Impose party discipline in an attempt to quell the left wing's dissent.
+- @war_outcome: We have done all that we can.
+
+@reactionary_help
+max-visits: 1
+go-to: kpd_revolution_menu
+on-arrival: war_reactionary_help = 1
+
+The far-right leaders readily agreed to fight against the Bolshevik menace, considering them a common enemy.
+
+@war_work_return
+max-visits: 1
+go-to: kpd_revolution_menu
+on-arrival: war_work_return = 1
+
+Placeholder; either successful, mid, or not at all successful. Calcs based on normalized worker, ppls party, kpd normalized worker, and left strength/labor dissent
+
+@party_discipline
+max-visits: 1
+go-to: kpd_revolution_menu
+on-arrival: war_party_discipline = 1
+
+We have enforced party discipline in an attempt to quell dissent among the left wing of the SPD.
+  
+@war_outcome
+max-visits: 1
+go-to: civil_war
