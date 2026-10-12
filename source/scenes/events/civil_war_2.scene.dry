@@ -1,4 +1,5 @@
-title: Civil War
+title: The Battle Lines Form...
+subtitle: We have done all that we could have
 audio: music/communist/A_las_barricadas.ogg
 go-to: coup_menu if civil_war_type = 0; united_revolution_menu if civil_war_type = 1; kpd_revolution_menu if civil_war_type = 2
 on-arrival: {!
