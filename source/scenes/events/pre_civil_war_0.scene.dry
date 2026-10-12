@@ -1,0 +1,50 @@
+title: The Battle Lines Form...
+subtitle: We have done all that we can.
+audio: music/communist/A_las_barricadas.ogg
+go-to: coup_menu
+
+= The Array of Forces
+
+Our enemies are the <span style="color: #808080;">nationalist</span> <span style="color: #3E88B3;">**Stahlhelm**</span>, with [+ sh_strength +] thousand troops, and the <span style="color: #7A3C00;">Nazi</span> <span style="color: #7A3C00;">**SA**</span>, with [+ sa_strength +] thousand troops. The loyalties of the Reichswehr, with its [+ reichswehr_strength +] thousand regular soldiers, and Prussian police, with [+ prussian_police_strength +] thousand members, are unclear.
+
+On our side, we have the Reichsbanner, at [+ rb_strength +] thousand members.
+
+What else do we have?
+  
+@coup_menu
+
+- @rw_help: Appeal to the Reichswehr to stand down.
+- @kpd_help: Request support from the Communists.
+- @general_strike: Call a general strike!
+- @loyal_police: Summon the loyal portions of the police.
+- @war_outcome: Now, the battle...
+
+@rw_help
+max-visits: 1
+go-to: coup_menu
+
+none
+
+@kpd_help
+max-visits: 1
+go-to: coup_menu
+
+none
+  
+@general_strike
+max-visits: 1
+go-to: coup_menu
+
+none
+  
+@loyal_police
+max-visits: 1
+go-to: coup_menu
+
+none
+  
+@war_outcome
+max-visits: 1
+go-to: coup_menu
+
+none, placeholder
