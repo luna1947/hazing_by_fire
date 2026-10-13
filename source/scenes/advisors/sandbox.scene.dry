@@ -3,26 +3,20 @@ is-pinned-card: true
 tags: advisor
 card-image: img/muller_cabinet.jpg
 new-page: true 
-go-to: sandbox_menu
 
 = Sandbox
 
-@sandbox_menu
 - @trigger_revolution: Trigger revolution
 - @trigger_coup: Trigger coup
 - @back: Return to main
 
 @trigger_revolution
 on-arrival: revolution_progress += 10
-go-to: sandbox_menu
-
-Revolution progress set to 10
+go-to: root
 
 @trigger_coup
 on-arrival: coup_progress += 10
-go-to: sandbox_menu
-
-Coup progress set to 10
+go-to: root
 
 @back
 go-to: root
