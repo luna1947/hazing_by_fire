@@ -10,7 +10,7 @@ go-to: sandbox_menu
 @sandbox_menu
 - @trigger_revolution: Trigger revolution
 - @trigger_coup: Trigger coup
-- @root: Return to main
+- @back: Return to main
 
 @trigger_revolution
 on-arrival: revolution_progress += 10
@@ -23,3 +23,6 @@ on-arrival: coup_progress += 10
 go-to: sandbox_menu
 
 Coup progress set to 10
+
+@back
+go-to: root
