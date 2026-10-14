@@ -20,14 +20,16 @@ What else do we have?
 - @war_outcome: We have done all that we can...
 
 @rw_help
+unavailable-subtitle: [? if reichswehr_loyalty < 0.2 : The Reichswehr detests us, and refuses even to hear us out. ?] [? if spd_in_government = 0 : We need to be in government to do this. ?]
 max-visits: 1
 go-to: coup_menu
-choose-if: reichswehr_loyalty > 0.2
+choose-if: reichswehr_loyalty > 0.2 && spd_in_government = 1
 on-arrival: war_rw_help = 1
 
 We have urged the Reichswehr to stand down, to avoid killing their countrymen. [? if reichswehr_loyalty < 0.2 : Unfortunately, few heed our calls; the Reichswehr detests us. ?][? if reichswehr_loyalty >= 0.2 and reichswehr_loyalty < 0.4 : Some officers and troops heed our calls to not fight against us. Some even join us. ?][? if reichswehr_loyalty >= 0.4 and reichswehr_loyalty < 0.6 : The Reichswehr is split. Many avoid taking a side, or join our side. ?][? if reichswehr_loyalty >= 0.6 : Surprisingly, the majority of the Reichswehr is on our side! Our preparations have worked. ?]
 
 @kpd_help
+unavailable-subtitle: The KPD refuses even to hear us out.
 max-visits: 1
 go-to: coup_menu
 choose-if: kpd_relation >= 30
@@ -45,6 +47,7 @@ on-arrival: war_general_strike = 1
 A general strike stopped the Kapp Putsch in 1920, and it can stop <span style="color: #7A3C00;">fascism</span> today. [? if normalized_workers_total > 70 : The workers are largely united with us. ?][? if normalized_workers_total >= 50 and normalized_workers_total <= 70 : There is some dissent within labor, but a majority of workers support the general strike. ?][? if normalized_workers_total > 30 and normalized_workers_total < 50 : However, there is substantial dissent within labor, and less than half support the general strike. ?][? if normalized_workers_total <= 30 : However, labor is deeply divided, and most workers do not heed the call to strike. ?]
   
 @loyal_police
+unavailable-subtitle: We need to be in the Prussian government to do this.
 max-visits: 1
 go-to: coup_menu
 choose-if: spd_in_government = 1
