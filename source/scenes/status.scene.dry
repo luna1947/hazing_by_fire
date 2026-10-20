@@ -294,9 +294,9 @@ Soviet relations: [+ soviet_relation : international_relations +]
 
 {!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">Labor</span>!} strength: [+ labor_strength : strength +] [? if difficulty = -1 and dynamic_mode = 0 : [+ labor_strength_disp +] ?], dissent: [+ labor_dissent : dissent +] [? if difficulty = -1 and dynamic_mode = 0 : [+ labor_dissent_disp +] ?]
 
-{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +] [? if difficulty = -1 and dynamic_mode = 0 : + reformist_strength_disp +] ?], dissent: [+ reformist_dissent : dissent +] [? if difficulty = -1 and dynamic_mode = 0 : [+ reformist_dissent_disp +] ?]
+{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +] [? if difficulty = -1 and dynamic_mode = 0 : [+ reformist_strength_disp +] ?], dissent: [+ reformist_dissent : dissent +] [? if difficulty = -1 and dynamic_mode = 0 : [+ reformist_dissent_disp +] ?]
 
-[? if neorevisionism: {!<span class="tooltip-text" title="Neorevisionists focus on defending the republic and expanding democracy, supporting new propaganda methods and extra-parliamentary action">Neorevisionist</span>!} strength: [+ neorevisionist_strength : strength +] [? if difficulty = -1 and dynamic_mode = 0 : + neorevisionist_strength_disp +] ?], dissent: [+ neorevisionist_dissent : dissent +] ?] [? if difficulty = -1 and dynamic_mode = 0 : [+ neorevisionist_dissent_disp +] ?]
+[? if neorevisionism: {!<span class="tooltip-text" title="Neorevisionists focus on defending the republic and expanding democracy, supporting new propaganda methods and extra-parliamentary action">Neorevisionist</span>!} strength: [+ neorevisionist_strength : strength +] [? if difficulty = -1 and dynamic_mode = 0 : [+ neorevisionist_strength_disp +] ?], dissent: [+ neorevisionist_dissent : dissent +] ?] [? if difficulty = -1 and dynamic_mode = 0 : [+ neorevisionist_dissent_disp +] ?]
 
 @paramilitaries
 on-arrival: {!
